@@ -68,15 +68,15 @@
 
 ###### **安装步骤**
 
-1. Clone the repo
+1. Clone the project
 
 ```sh
 git clone https://github.com/wangyouOVO/trip-recorder-.git
 ```
 2. 配置您的数据库如下两表
 
- <img src="images/logo.png" alt="Logo" width="80" height="80">
-  <img src="images/logo.png" alt="Logo" width="80" height="80">
+ <img src="image/QQ截图20220511213601.png" alt="Logo" width="180" height="120">
+  <img src="image/QQ截图20220511213719.png" alt="Logo" width="180" height="120">
   
 3.在nodeServer/db/index.js文件中配置您的数据库信息，便可在nodeServer文件下开启终端（用管理员身份打开），输入
 
