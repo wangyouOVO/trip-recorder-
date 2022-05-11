@@ -45,37 +45,54 @@
 - [上手指南](#上手指南)
   - [开发前的配置要求](#开发前的配置要求)
   - [安装步骤](#安装步骤)
-- [文件目录说明](#文件目录说明)
-- [开发的架构](#开发的架构)
+<!-- - [开发的架构](#开发的架构)
 - [部署](#部署)
-- [使用到的框架](#使用到的框架)
+- [使用到的框架](#使用到的框架) -->
 <!-- - [贡献者](#贡献者) -->
 <!--   - [如何参与开源项目](#如何参与开源项目) -->
 <!-- - [版本控制](#版本控制) -->
 <!-- - [作者](#作者)
 - [鸣谢](#鸣谢) -->
 
-### 上手指南
+<!-- ### 上手指南
 
 请将所有链接中的“shaojintian/Best_README_template”改为“your_github_name/your_repository”
-
+ -->
 
 
 ###### 开发前的配置要求
 
-1. xxxxx x.x.x
-2. xxxxx x.x.x
+1. 安装MySQL数据库
+2. 安装nodejs框架
+3. 安装微信开发者工具
 
 ###### **安装步骤**
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
 
 ```sh
-git clone https://github.com/shaojintian/Best_README_template.git
+git clone https://github.com/wangyouOVO/trip-recorder-.git
 ```
+2. 配置您的数据库如下两表
 
-### 文件目录说明
+ <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <img src="images/logo.png" alt="Logo" width="80" height="80">
+  
+3.在nodeServer/db/index.js文件中配置您的数据库信息，便可在nodeServer文件下开启终端（用管理员身份打开），输入
+
+```sh
+node app.js
+```
+开启服务器，别忘了在终端中先输入
+
+```sh
+net start MySQL80
+```
+启动数据库，否则会报错
+
+4.使用微信开发者工具导入triprecorder项目，就可以使用了。
+
+<!-- ### 文件目录说明
 eg:
 
 ```
@@ -156,10 +173,10 @@ xxx@xxxx
 - [Choose an Open Source License](https://choosealicense.com)
 - [GitHub Pages](https://pages.github.com)
 - [Animate.css](https://daneden.github.io/animate.css)
-- [xxxxxxxxxxxxxx](https://connoratherton.com/loaders)
+- [xxxxxxxxxxxxxx](https://connoratherton.com/loaders) -->
 
 <!-- links -->
-[your-project-path]:shaojintian/Best_README_template
+<!-- [your-project-path]:shaojintian/Best_README_template
 [contributors-shield]: https://img.shields.io/github/contributors/shaojintian/Best_README_template.svg?style=flat-square
 [contributors-url]: https://github.com/shaojintian/Best_README_template/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/shaojintian/Best_README_template.svg?style=flat-square
@@ -172,4 +189,4 @@ xxx@xxxx
 [license-url]: https://github.com/shaojintian/Best_README_template/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/shaojintian
-
+ -->
