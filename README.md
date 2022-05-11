@@ -39,12 +39,12 @@
 </p>
 
 ##演示
-
- <img src="image/1.png" alt="Logo" width="150" height="400">
- <img src="image/2.png" alt="Logo" width="150" height="400">
-  <img src="image/3.png" alt="Logo" width="150" height="400">
-  <img src="image/4.png" alt="Logo" width="150" height="400">
-
+<div display="flex">
+ <img src="image/1.png" alt="Logo" width="200" height="400">
+ <img src="image/2.png" alt="Logo" width="200" height="400">
+  <img src="image/3.png" alt="Logo" width="200" height="400">
+  <img src="image/4.png" alt="Logo" width="200" height="400">
+</div>
 ## 目录
 
 - [上手指南](#上手指南)
