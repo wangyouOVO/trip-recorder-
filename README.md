@@ -2,6 +2,7 @@
 # 基于微信小程序和nodejs的行程记录app
 
  该项目为前端训练营结营大作业，使用微信小程序完成了一个简单的行程记录和规划小程序，并有完整的注册登录系统，每个用户对应的账号可以分别注册多个地点用来规划行程，也可以给去过的地方添加行程日记，每个地点可以对应上传图片并分享给微信好友。对每个地点都有相应的增删查改操作。还有简单的景点买票服务，也可对订单进行修改。
+ <br />
  后端使用nodejs搭配mysql实现，可将数据上传至数据库中保存。
 
 <!-- PROJECT SHIELDS -->
@@ -37,8 +38,12 @@
 
 </p>
 
+##演示
 
- 本篇README.md面向开发者
+ <img src="image/1.png" alt="Logo" width="150" height="400">
+ <img src="image/2.png" alt="Logo" width="150" height="400">
+  <img src="image/3.png" alt="Logo" width="150" height="400">
+  <img src="image/4.png" alt="Logo" width="150" height="400">
 
 ## 目录
 
@@ -75,8 +80,8 @@ git clone https://github.com/wangyouOVO/trip-recorder-.git
 ```
 2. 配置您的数据库如下两表
 
- <img src="image/QQ截图20220511213601.png" alt="Logo" width="180" height="120">
-  <img src="image/QQ截图20220511213719.png" alt="Logo" width="180" height="120">
+ <img src="image/QQ截图20220511213601.png" alt="Logo" width="500" height="400">
+  <img src="image/QQ截图20220511213719.png" alt="Logo" width="500" height="400">
   
 3.在nodeServer/db/index.js文件中配置您的数据库信息，便可在nodeServer文件下开启终端（用管理员身份打开），输入
 
