@@ -1,28 +1,29 @@
 
-# ProjectName
+# 基于微信小程序和nodejs的行程记录app
 
-ProjectName and Description
+ 该项目为前端训练营结营大作业，使用微信小程序完成了一个简单的行程记录和规划小程序，并有完整的注册登录系统，每个用户对应的账号可以分别注册多个地点用来规划行程，也可以给去过的地方添加行程日记，每个地点可以对应上传图片并分享给微信好友。对每个地点都有相应的增删查改操作。还有简单的景点买票服务，也可对订单进行修改。
+ 后端使用nodejs搭配mysql实现，可将数据上传至数据库中保存。
 
 <!-- PROJECT SHIELDS -->
 
-[![Contributors][contributors-shield]][contributors-url]
+<!-- [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+[![LinkedIn][linkedin-shield]][linkedin-url] -->
 
 <!-- PROJECT LOGO -->
 <br />
 
 <p align="center">
-  <a href="https://github.com/shaojintian/Best_README_template/">
+<!--   <a href="https://github.com/shaojintian/Best_README_template/">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
+  </a> -->
 
-  <h3 align="center">"完美的"README模板</h3>
-  <p align="center">
-    一个"完美的"README模板去快速开始你的项目！
+  <h3 align="center"> 您的行程，即刻开始！</h3>
+<!--   <p align="center">
+    您的行程，即刻开始！
     <br />
     <a href="https://github.com/shaojintian/Best_README_template"><strong>探索本项目的文档 »</strong></a>
     <br />
@@ -32,7 +33,7 @@ ProjectName and Description
     <a href="https://github.com/shaojintian/Best_README_template/issues">报告Bug</a>
     ·
     <a href="https://github.com/shaojintian/Best_README_template/issues">提出新特性</a>
-  </p>
+  </p> -->
 
 </p>
 
@@ -48,11 +49,11 @@ ProjectName and Description
 - [开发的架构](#开发的架构)
 - [部署](#部署)
 - [使用到的框架](#使用到的框架)
-- [贡献者](#贡献者)
-  - [如何参与开源项目](#如何参与开源项目)
-- [版本控制](#版本控制)
-- [作者](#作者)
-- [鸣谢](#鸣谢)
+<!-- - [贡献者](#贡献者) -->
+<!--   - [如何参与开源项目](#如何参与开源项目) -->
+<!-- - [版本控制](#版本控制) -->
+<!-- - [作者](#作者)
+- [鸣谢](#鸣谢) -->
 
 ### 上手指南
 
