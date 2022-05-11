@@ -1,0 +1,23 @@
+<view class="mainbox">
+  <view class="titlebox">
+    <view class="lefttitlebox">小行迹</view>
+  </view>
+  <view class="list">
+    <view class="product-item" wx:for="{{marks}}" wx:for-index="index" wx:key="{{item.id}}">
+      <movable-area>
+        <movable-view out-of-bounds="true" direction="horizontal" x="{{x}}" inertia="true" data-id="{{item.id}}" data-productIndex="{{index}}" bindtap="handleTap" bindtouchstart="handleTouchStart" bindtouchend="handleTouchEnd" bindchange="handleMovableChange">
+          <view class="product-item-wrap">
+            <view class="product-movable-item">
+              <view class="product-movable-item-name">{{item.title}}</view>
+              <view class="product-movable-item-code">{{item.date}}</view>
+            </view>
+            <view style="height: 50px;width: 50px;float: right;display: flex;align-items: center;justify-content: center;">
+            <image src="{{item.iconPath}}" style="height: 30px;width: 30px;"></image>
+            </view>
+          </view>
+        </movable-view>
+      </movable-area>
+      <view class="delete-btn" data-id="{{item.id}}" bindtap="handleDeleteProduct">删除</view>
+    </view>
+  </view>
+</view>

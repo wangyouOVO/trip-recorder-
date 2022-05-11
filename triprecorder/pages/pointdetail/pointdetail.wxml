@@ -1,0 +1,64 @@
+<view class="mainbox">
+  <view class="box1" hidden="{{!hiddenform}}">
+    <view class="formbox">
+      <!-- <view class="header" style="color: blueviolet;">关于想去的地方...</view> -->
+      <!-- <image src="../../image/formbg.jpg" class="bg"></image> -->
+      <view class="section">
+        <view> {{marker.title}}</view>
+      </view>
+      <view class="section1">
+        <view class="picker" style="font-size: small;">
+          出发的日子: {{marker.date}}
+        </view>
+      </view>
+      <image hidden="{{showImage}}" src="{{src}}" style="height: 250px; width: 90%; margin: 8px; margin-left: 15px;"></image>
+      <view class="section2">
+        <view style="font-size: medium;">{{marker.text}}</view>
+      </view>
+
+    </view>
+    <view wx:if="{{isMe}}" class="footer">
+      <view class="footer-item" bindtap="openform">重新编辑</view>
+      <view class="footer-item" bindtap="uploadImg">上传图片</view>
+      <!-- <view open-type="share" class="footer-item" >分享行迹</view> -->
+      <!-- <view class="sharing">
+        <button class="share" open-type="share">分享</button>
+      </view> -->
+    </view>
+
+  </view>
+
+
+  <form hidden="{{hiddenform}}" bindsubmit="formSubmit" bindreset="formReset" class="formbox1">
+    <!-- <view class="header" style="color: blueviolet;">关于想去的地方...</view> -->
+    <!-- <image src="../../image/formbg.jpg" class="bg"></image> -->
+    <view class="top">
+      <view class="left">
+        <view class="section">
+          <input name="title" placeholder="心愿地" value="{{marker.title}}" />
+        </view>
+
+        <view class="section1">
+          <picker mode="date" name="date" value="{{marker.date}}" start="2015-09-01" end="2025-09-01" bindchange="bindDateChange">
+            <view class="picker" style="font-size: small;">
+              出发的日子: {{marker.date}}
+            </view>
+          </picker>
+        </view>
+      </view>
+
+      <view class="right">
+        <view style="font-size: smaller;">完成旅行？</view>
+        <switch type="switch" name="isarrived" checked="{{marker.isarrived}}"></switch>
+      </view>
+    </view>
+    <view class="section2">
+      <input style="font-size: medium;" name="text" placeholder="记录想说的。。" value="{{marker.text}}" />
+    </view>
+    <view class="memu">
+      <button style="width:280rpx;font-size:30rpx !important;" class="btn" formType="submit">确定修改</button>
+    </view>
+
+  </form>
+
+</view>

@@ -1,0 +1,59 @@
+{
+  "pages": [
+    "pages/mylogin/mylogin",
+    "pages/address/address",
+    "pages/index/index",
+    "pages/register/register",
+    "pages/userpage/userpage",
+    "pages/edituserinfo/edituserinfo",
+    "pages/userhome/userhome",
+    "pages/updatepwd/updatepwd",
+    "pages/market/market",
+    "pages/pointdetail/pointdetail",
+    "pages/alladdress/alladdress",
+    "pages/index1/index1",
+    "pages/detail/detail",
+    "pages/map/map",
+    "pages/order/order",
+    "pages/ordering/ordering",
+    "pages/plan/plan",
+    "pages/search/search1",
+    "pages/sharedpage/sharedpage"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示" 
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "爱旅行",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "tabBar": {
+    "selectedColor": "#3E2AD1",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/home-0.png",
+        "selectedIconPath": "image/home-1.png",
+        "text": "首页"
+      },
+      {
+        "iconPath": "image/weather-0.png",
+        "selectedIconPath": "image/weather-1.png",
+        "pagePath": "pages/address/address",
+        "text": "想去"
+      },
+      {
+        "iconPath": "image/me-0.png",
+        "selectedIconPath": "image/me-1.png",
+        "pagePath": "pages/userhome/userhome",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

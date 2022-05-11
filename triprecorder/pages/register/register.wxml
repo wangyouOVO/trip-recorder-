@@ -1,0 +1,24 @@
+<!--pages/register/register.wxml-->
+<view class="v1" style="height:{{clientHeight?clientHeight+'px':'auto'}}">
+<!-- <view class="v1"> -->
+  <view class="v2">
+    <view class="reg-container">
+      <view class="reg-text"> 注册</view>
+    </view>
+    <view class="userName">
+      <input placeholder=" 请输入用户名" type="text" placeholder-class="usericon" bindinput="content" />
+    </view>
+    <view class=passWord">
+      <input placeholder=" 请输入密码" placeholder-class="pwdicon" type="password" bindinput="password" />
+    </view>
+    <view class=Confir-passWord">
+      <input placeholder=" 请再次输入密码" placeholder-class="pwdicon" type="password" bindinput="confirpassword" />
+    </view>
+    <view class="login-button">
+      <button class="btn-reg" bindtap="userlogin">注册</button>
+      <view class="login">
+        <navigator url="/pages/mylogin/mylogin">已有帐号？立即登录！</navigator>
+      </view>
+    </view>
+  </view>
+</view>

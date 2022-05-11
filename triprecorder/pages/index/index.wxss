@@ -1,0 +1,298 @@
+/**index.wxss**/
+@import "../../lib/style/font.wxss";
+
+.playlist {
+    display: flex;
+    justify-content: center;
+    /*水平*/
+    align-items: center;
+    /*垂直*/
+    width: 100%
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    /*水平*/
+    align-items: center;
+    /*垂直*/
+}
+
+navigator .search-button {
+    position: absolute;
+    top: 25rpx;
+    right: 25rpx;
+    text-align: center;
+    line-height: 60rpx;
+    box-sizing: border-box;
+    width: 120rpx;
+    height: 60rpx;
+    border-radius: 50rpx;
+    background-color: rgba(255, 255, 255, .3);
+    backdrop-filter: blur(10rpx);
+    box-shadow: 2rpx 2rpx 20rpx rgba(0, 0, 0, .6);
+}
+
+navigator .search-button::before {
+    position: relative;
+    content: "\e761";
+    font-size: 40rpx;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "iconfont";
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    /*水平*/
+    align-items: center;
+    /*垂直*/
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    position: relative;
+    flex: 3;
+    top: 0rpx;
+    left: 0rpx;
+    height: 210rpx;
+    width: 400rpx;
+    border-radius: 15rpx;
+    box-shadow: 5rpx 5rpx 10rpx rgba(0, 0, 0, .4);
+}
+
+.a {
+    display: flex;
+    flex: 4;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+}
+
+.item {
+    width: 100%;
+    margin-left: 20rpx;
+}
+
+.todayItem {
+    background-color: white;
+    border-radius: 10rpx;
+    padding: 20rpx;
+    margin-right: 30rpx;
+    margin-top: 20rpx;
+    margin-bottom: 20rpx;
+    box-shadow: 10rpx 10rpx 10rpx rgba(0, 0, 0, .2);
+}
+
+.price {
+    display: inline;
+    float: right;
+    margin-top: 20rpx;
+    margin-right: 20rpx;
+    margin-left: 20rpx;
+    font-size: xx-small;
+}
+
+.text {
+    flex: 4;
+    margin: 10rpx;
+    height: 50rpx;
+    padding:5rpx;
+    box-shadow:10rpx 10rpx 10rpx rgba(0, 0, 0, .2);
+    border-radius: 20rpx;
+}
+
+.text1 {
+    font-size:40rpx;
+    font-weight: 550;
+    color:#50557A;
+}
+
+.rate {
+    flex: 2;
+    text-align: end;
+    color: rgb(196, 10, 10);
+    font-weight: 700;
+}
+.detail {
+    flex: 3;
+    display: flex;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    flex: 2;
+    padding: 20rpx;
+    padding-right: 0;
+    text-align: center;
+}
+
+.price1 {
+    position: relative;
+    top: -20rpx;
+    left: -30rpx;
+    font-size: x-small;
+}
+
+.price2 {
+    font-size: large;
+    font-weight: 600;
+    color: rgb(196, 10, 10, .8);
+    text-shadow: 3px 3px 1px rgba(0, 0, 0, .2);
+}
+
+.address {
+    flex: 3;
+    font-size: 30rpx;
+    text-align: left;
+    padding-top: 20rpx;
+    padding-left: 20rpx;
+    padding-right: 5rpx;
+    border-right: 3px dashed rgba(0,0,0,.4);
+}
+
+.swiper-box {
+    display: flex;
+    justify-content: center;
+    /*水平*/
+    align-items: center;
+    /*垂直*/
+    width: 100%;
+}
+
+image {
+    width: 100%;
+    height: 100%;
+    border-radius: 20rpx;
+}
+
+.img::before {
+    position: absolute;
+    z-index: 1;
+    font-family: "iconfont";
+    font-size: 120rpx;
+    content: "\e64b";
+    top: 500rpx;
+    left: 20rpx;
+    width: 50rpx;
+    height: 50rpx;
+    text-shadow: 10px 10px 2px rgba(0, 0, 0, .2), 0 0 1rpx black;
+    color: rgba(175, 191, 227, .8);
+}
+
+@keyframes float-swiper {
+    0% {
+        top: -10rpx;
+        left: -10rpx;
+    }
+
+    25% {
+        top: 30rpx;
+        left: 10rpx;
+    }
+
+    50% {
+        top: 30rpx;
+        left: -10rpx;
+    }
+
+    75% {
+        top: -10rpx;
+        left: 10rpx;
+    }
+
+    100% {
+        top: -10rpx;
+        left: -10rpx;
+    }
+}
+
+.img {
+    height: 400rpx;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    border-radius: 20rpx;
+    margin-bottom: 150rpx;
+    margin-left: 20rpx;
+    margin-right: 20rpx;
+    box-shadow: 10rpx 10rpx 10rpx rgba(0, 0, 0, .5);
+    animation-name: float-swiper;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.img swiper {
+    height: 402rpx;
+}
+
+.section {
+    height: 500rpx;
+    margin-bottom: 50rpx;
+}
+
+.section .loc {
+    position: absolute;
+    top: -20rpx;
+    left: 10rpx;
+    font-size: 150rpx;
+    font-weight: 800;
+    text-shadow: 10px 10px 2px rgba(0, 0, 0, .2);
+    font-family: LIsu;
+    color: rgba(52, 31, 71, .8);
+}
+
+.loc1 {
+    position: absolute;
+    top: 130rpx;
+    left: 200rpx;
+    text-shadow: 10px 10px 2px rgba(0, 0, 0, .2);
+    color: rgba(52, 31, 71, .8);
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.rate {
+    height: 50rpx;
+    margin-left: 20rpx;
+}
+
+.b {
+    display: flex;
+    flex-direction: row;
+}
+
+.sear {
+    width: 50rpx;
+    height: 50rpx;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    height: 20rpx;
+    margin-left: 20rpx;
+}
+
+.scroll-down {
+    position: absolute;
+    top: 1000rpx;
+    left: 345rpx;
+    width: 60rpx;
+    height: 60rpx;
+    text-align: center;
+    border-radius: 50rpx;
+    background-color: rgba(255, 255, 255, .1);
+}

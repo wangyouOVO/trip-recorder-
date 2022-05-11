@@ -1,0 +1,200 @@
+/* pages/search/search1.wxss */
+@import "../../lib/style/font.wxss";
+
+.container {
+    padding: 0;
+    margin: 0;
+    background-color: #F0F7EB;
+    height: 100vh;
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 0;
+    width: 100%;
+    transition: 1s;
+}
+
+.search-container {
+    position: absolute;
+    top: 40rpx;
+    width: 90%;
+    border-radius: 20rpx;
+    background: rgba(255, 255, 255, .4);
+    box-shadow: inset 7px 7px 13px rgba(255, 255, 255, .1), inset -7px -7px 13px rgba(255, 255, 255, .2),
+        5rpx 5rpx 20rpx rgba(0, 0, 0, .3);
+    height: 80rpx;
+    line-height: 80rpx;
+}
+
+.search-container::before {
+    content: '\e60c';
+    position: absolute;
+    top: 0;
+    left: 10rpx;
+    font-family: "iconfont";
+    color: #50557A;
+    font-size: 60rpx;
+}
+
+.search-container input {
+    height: 100%;
+    position: relative;
+    text-align: center;
+    line-height: 80rpx;
+    top: 0;
+    font-size: 35rpx;
+    font-weight: bold;
+    color: #50557A;
+}
+
+.recommend-container {
+    position: relative;
+    top: 170rpx;
+    width: 90%;
+    padding-bottom: 200rpx;
+    padding-top: 20rpx;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(175, 191, 227, .1);
+    box-shadow: inset 20rpx 20rpx 30rpx rgba(80, 85, 122, 0.05), inset -20rpx -20rpx 30rpx rgba(255, 255, 255, 0.4);
+    border-radius: 20rpx;
+}
+
+.rec-header {
+    margin-left: 30rpx;
+    margin-top: 10rpx;
+    font-weight: 600;
+    font-size: 60rpx;
+    color: #50557A;
+    text-shadow: 3rpx 3rpx 1rpx yellow;
+}
+
+.rec-header::before {
+    position: absolute;
+    content: '!';
+    width: 100rpx;
+    height: 100rpx;
+    font-size: 160rpx;
+    text-shadow: 10rpx 10rpx 1rpx yellow;
+    top: -60rpx;
+    left: 320rpx;
+    transform: rotate(25deg);
+}
+
+.rec-detail {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 30rpx;
+    flex-wrap: wrap;
+}
+
+.rec-items-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    margin-top: 0 auto;
+    width: 50%;
+    font-size: 35rpx;
+    font-weight: border;
+}
+
+.rec-items {
+    margin-top: 30rpx;
+    border: 2rpx dashed #50557A;
+    border-radius: 20rpx;
+    box-shadow: 5rpx 5rpx 10rpx rgba(0, 0, 0, .1);
+    width: 80%;
+    height: 80rpx;
+    padding: 10rpx;
+    text-align: center;
+    line-height: 80rpx;
+}
+
+.searchfor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.searchfor-container {
+    position: absolute;
+    top: 40rpx;
+    width: 90%;
+    border-radius: 20rpx;
+    background: rgba(255, 255, 255, .4);
+    box-shadow: inset 7px 7px 13px rgba(255, 255, 255, .1), inset -7px -7px 13px rgba(255, 255, 255, .2),
+        5rpx 5rpx 20rpx rgba(0, 0, 0, .3);
+    height: 80rpx;
+    line-height: 80rpx;
+}
+
+.cancel-view {
+    position: absolute;
+    top: 120rpx;
+    right: 60rpx;
+    width: 60rpx;
+    height: 60rpx;
+    z-index: 1;
+}
+
+.searchfor-container input {
+    height: 100%;
+    position: relative;
+    text-align: center;
+    line-height: 80rpx;
+    top: 0;
+    font-size: 35rpx;
+    font-weight: bold;
+    color: #50557A;
+}
+
+.scrollview {
+    position: relative;
+    top: 170rpx;
+    width: 90%;
+    padding-bottom: 200rpx;
+    padding-top: 20rpx;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(175, 191, 227, .1);
+    box-shadow: inset 20rpx 20rpx 30rpx rgba(80, 85, 122, 0.05), inset -20rpx -20rpx 30rpx rgba(255, 255, 255, 0.4);
+    border-radius: 20rpx;
+}
+
+.scrollItem {
+    margin-top: 30rpx;
+    width: 100%;
+}
+
+.scrollItem navigator {
+   display: flex;
+   width: 100%;
+}
+
+.scrollItem navigator image {
+    position: relative;
+    top: 2px;
+    width: 60rpx;
+    height: 60rpx;
+}
+
+.scrollItem navigator text {
+    margin-left: 10rpx;
+    line-height: 70rpx;
+    text-align: center;
+    font-size: 40rpx;
+    color:#50557A;
+}

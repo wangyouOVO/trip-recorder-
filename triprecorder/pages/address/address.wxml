@@ -1,0 +1,38 @@
+<!--pages/address/address.wxml-->
+<view class="container1">
+  <view class="header">可在下方规划您的行程~</view>
+  <view class="mapbox">
+    <map id="myMap" longitude="{{marks[0].longitude}}" latitude="{{marks[0].latitude}}" show-compass="true" enable-3D="true"  show-location="true" class="map" scale="20" markers="{{marks}}" bindcallouttap="callouttap">
+      <image src="/image/定位1.png" bindtap="moveToLocation" style="height: 30px;width: 30px;margin: 20px;"></image>
+    </map>
+  </view>
+  <view class="memu">
+    <button style="width:280rpx;font-size:30rpx !important;" class="btn" bindtap="chooseLocation">添加行程</button>
+    <button style="width:280rpx;font-size:30rpx !important;" class="btn" bindtap="click">更新行程</button>
+  </view>
+ <view class="board" hidden="{{showform}}"></view>
+  <form hidden="{{showform}}" bindsubmit="formSubmit" bindreset="formReset" class="formbox">
+    <view class="header" style="color: blueviolet;">关于想去的地方...</view>
+    <!-- <image src="../../image/formbg.jpg" class="bg"></image> -->
+    <view class="section1">
+      <input style="font-size: x-large;" name="name" placeholder="心愿地" />
+    </view>
+    <view class="section1">
+      <picker mode="date" name="date" value="{{date}}" start="2015-09-01" end="2025-09-01" bindchange="bindDateChange">
+        <view class="picker" style="font-size: small;">
+          出发的日子: {{date}}
+        </view>
+      </picker>
+    </view>
+    <view class="section2">
+      <input style="font-size: medium;" name="text" placeholder="记录想说的。。" />
+    </view>
+
+    <view class="memu">
+      <button style="width:280rpx;font-size:30rpx !important;" class="btn1" formType="submit">提交</button>
+    </view>
+  </form>
+  <view style="width: 100%;height: 100px;"></view>
+
+
+</view>

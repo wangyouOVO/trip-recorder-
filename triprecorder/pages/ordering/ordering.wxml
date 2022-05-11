@@ -1,0 +1,41 @@
+<view class="container" >
+<view class="ordering" >
+  <view class="title" >
+    <view class="tit">{{text}}门票</view>
+    <view class="img">
+      <image class="intro" src='{{src}}'></image>
+    </view>
+    <view style="flex-direction: row; display: flex; margin-top: 30rpx; margin-left: 30rpx;">
+      <view>数量：</view>
+      <input class="num" style="width: 50rpx;" bindinput='content' placeholder='0'></input>
+    </view>
+    <view class="pric">
+      <view style="margin-top: -10rpx;" class="pric1">¥{{price}}/张</view>
+    </view>
+  </view>
+</view>
+<view class="inform">
+  <view class="go" style="font-weight: 600;">出行信息</view>
+  <view class="na">
+    <view class="pre-text"> 姓名 ：</view>
+    <view class="in-name">
+      <input bindtap="name"></input>
+    </view>
+  </view>
+  <view class="na">
+    <view class="pre-text"> 身份证 ：</view>
+    <view class="in-idcard">
+      <input bindinput="idcard"></input>
+    </view>
+  </view>
+  <view class="na">
+    <view class="pre-text">联系电话：</view>
+    <view class="in-phone">
+      <input bindinput="phone"></input>
+    </view>
+  </view>
+</view>
+<view class="buybtn-container">
+  <button class="orde" bindtap="buy">购买</button>
+</view>
+</view>

@@ -1,0 +1,204 @@
+/* pages/userhome/userhome.wxss */
+@import "../../lib/style/font.wxss";
+
+.v1 {
+  position: absolute;
+  width: 100%;
+  height: 1000rpx;
+  background-color: #AFBFE3;
+}
+
+.v1 .v2 {
+  box-sizing: border-box;
+  position: relative;
+  margin: 10px auto;
+  width: 90%;
+  height: 1000rpx;
+  background-color: rgba(250, 248, 248);
+  border-radius: 50rpx;
+  overflow: hidden;
+}
+
+.user-container {
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 250rpx;
+}
+
+.avatar-image {
+  box-sizing: border-box;
+  flex: 2;
+  height: 250rpx;
+  padding: 30rpx 30rpx 30rpx 50rpx;
+  box-shadow: 2rpx 2rpx 5rpx rgba(80, 85, 122, .3);
+}
+
+.avatar-image::before {
+  font-family: "iconfont";
+  color: #50557A;
+  content: "\e632";
+  font-size: 200rpx;
+}
+
+.name-container {
+  flex: 5;
+  display: flex;
+  height: 250rpx;
+  flex-direction: column;
+}
+
+.username {
+  padding-top: 45rpx;
+  padding-left: 20rpx;
+  color: rgba(80, 85, 122, .8);
+  font-size: 35rpx;
+  flex: 1;
+  box-shadow: 2rpx 2rpx 5rpx rgba(80, 85, 122, .3);
+}
+
+.nickname {
+  padding-top: 45rpx;
+  padding-left: 20rpx;
+  color: rgba(80, 85, 122, .8);
+  font-size: 35rpx;
+  flex: 1;
+  box-shadow: 2rpx 2rpx 5rpx rgba(80, 85, 122, .3);
+}
+
+.nav-container {
+  position: absolute;
+  top: 260rpx;
+  height: 600rpx;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav-container view {
+  box-sizing: border-box;
+  width: 33.3%;
+}
+
+.nav-container .order-form view {
+  position: relative;
+  background-color: #F0F7EB;
+  top: 60rpx;
+  left: 70rpx;
+  width: 200rpx;
+  height: 200rpx;
+  text-align: center;
+  padding: 30rpx 50rpx 50rpx 50rpx;
+  box-shadow: 5rpx 5rpx 3rpx rgba(80, 85, 122, .1);
+  border-radius: 50%;
+  transition: all .5s;
+}
+
+.nav-container .order-form view:hover {
+  box-shadow: 5rpx 5rpx 3rpx rgba(80, 85, 122, .5);
+  transform: scale(1.2);
+}
+
+.nav-container .order-form view::before {
+  font-family: "iconfont";
+  content: "\e626";
+  font-size: 100rpx;
+  color: #50557A;
+}
+
+.nav-container .order-form view::after {
+  content: "我的订单";
+  color: #50557A;
+  font-size: 25rpx;
+}
+
+.nav-container .user-edit view {
+  position: relative;
+  background-color: #F0F7EB;
+  top: -30rpx;
+  left: -80rpx;
+  width: 200rpx;
+  padding: 30rpx 50rpx 50rpx 50rpx;
+  height: 200rpx;
+  box-shadow: 5rpx 5rpx 3rpx rgba(80, 85, 122, .1);
+  border-radius: 50%;
+  transition: all .5s;
+}
+
+.nav-container .user-edit view:hover {
+  box-shadow: 5rpx 5rpx 3rpx rgba(80, 85, 122, .5);
+  transform: scale(1.2);
+}
+
+.nav-container .user-edit view::before {
+  font-family: "iconfont";
+  content: "\e925";
+  font-size: 100rpx;
+  color: #50557A;
+}
+
+.nav-container .user-edit view::after {
+  content: "个人资料";
+  color: #50557A;
+  font-size: 25rpx;
+}
+
+.nav-container .favor-loc view {
+  position: relative;
+  background-color: #F0F7EB;
+  top: -60rpx;
+  left: -90rpx;
+  width: 200rpx;
+  padding: 30rpx 50rpx 50rpx 50rpx;
+  height: 200rpx;
+  box-shadow: 5rpx 5rpx 3rpx rgba(80, 85, 122, .1);
+  border-radius: 50%;
+  transition: all .5s;
+}
+
+.nav-container .favor-loc view:hover {
+  box-shadow: 5rpx 5rpx 3rpx rgba(80, 85, 122, .5);
+  transform: scale(1.2);
+}
+
+.nav-container .favor-loc view::before {
+  font-family: "iconfont";
+  content: "\e60a";
+  font-size: 100rpx;
+  color: #50557A;
+}
+
+.nav-container .favor-loc view::after {
+  content: "心愿地点";
+  color: #50557A;
+  font-size: 25rpx;
+}
+
+.nav-bottom {
+  position: absolute;
+  display: flex;
+  top: 880rpx;
+  height: 60rpx;
+  width: 100%;
+}
+
+.nav-bottom view {
+  box-sizing: border-box;
+  flex: 1;
+  margin-left: 50rpx;
+  margin-right: 50rpx;
+  font-size: 30rpx;
+  text-align: center;
+  padding-top: 10rpx;
+  text-decoration: underline;
+  box-shadow: 0rpx 5rpx 5rpx rgba(80, 85, 122, .1);
+  border-radius: 10rpx;
+  color: rgba(80, 85, 122, .5);
+  transition: all .5s;
+}
+
+.nav-bottom view:hover {
+  box-shadow: 0rpx 5rpx 5rpx rgba(80, 85, 122, .5);
+}

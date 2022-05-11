@@ -1,0 +1,105 @@
+/* pages/edituserinfo/edituserinfo.wxss */
+@import "../../lib/style/font.wxss";
+.v1 {
+  display: block;
+  position: absolute;
+  width: 100%;
+  background-color: #AFBFE3;
+}
+
+.v1 .v2 {
+  position: relative;
+  margin: 10px auto;
+  width: 90%;
+  height: 1125rpx;
+  background-color: rgba(250,248,248);
+  border-radius: 50rpx;
+  overflow: hidden;
+}
+
+.user-container {
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 250rpx;
+}
+
+.avatar-image {
+  box-sizing: border-box;
+  flex: 2;
+  height: 250rpx;
+  padding: 30rpx 30rpx 30rpx 50rpx;
+  box-shadow: 2rpx 2rpx 5rpx rgba(80, 85, 122, .3);
+}
+
+.avatar-image::before {
+  font-family: "iconfont";
+  color: #50557A;
+  content: "\e632";
+  font-size: 200rpx;
+}
+
+.name-container {
+  flex: 5;
+  display: flex;
+  height: 250rpx;
+  flex-direction: column;
+}
+
+.username {
+  padding-top: 45rpx;
+  padding-left: 20rpx;
+  color:rgba(80, 85, 122,.8);
+  font-size: 35rpx;
+  flex: 1;
+  box-shadow: 2rpx 2rpx 5rpx rgba(80, 85, 122, .3);
+}
+
+.nickname {
+  padding-top: 45rpx;
+  padding-left: 20rpx;
+  color:rgba(80, 85, 122,.8);
+  font-size: 35rpx;
+  flex: 1;
+  width: 296rpx;
+  box-shadow: 2rpx 2rpx 5rpx rgba(80, 85, 122, .3);
+  transition: all .5s;
+}
+.nickname:hover{
+  box-shadow: 5rpx 5rpx 5rpx rgba(80, 85, 122, .5);
+}
+
+.user-detail {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 820rpx;
+  top: 260rpx;
+}
+
+.user-detail input {
+  flex: 1;
+  margin: 10rpx;
+  padding: 10rpx;
+  font-size: small;
+  border-bottom: 1px grey dashed;
+  transition:all .5s;
+}
+.user-detail input:hover{
+  box-shadow: 5rpx 5rpx 5rpx rgba(80, 85, 122, .5);
+  border:none;
+}
+.user-detail .describe{
+  flex:4;
+  /* border-radius: 50rpx; */
+  box-shadow: 0rpx 5rpx 5rpx rgba(80, 85, 122, .3);
+  border-bottom: none;
+}
+.btn-save{
+  font-weight: lighter;
+  margin-top: 20rpx;
+  background-color: #AFBFE3;
+}

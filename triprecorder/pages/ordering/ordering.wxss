@@ -1,0 +1,145 @@
+/* pages/index/ordering.wxss */
+.container {
+  background-color: #F0F7EB;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.ordering {
+  background-color: rgb(139, 166, 253);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 0 20rpx rgba(0, 0, 0, 0.15);
+}
+
+.title {
+  background-color: white;
+  font-weight: 600;
+  border-radius: 20rpx;
+  width: 100%;
+  margin-top: 20rpx;
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+  height: 500rpx;
+  margin-bottom: 40rpx;
+  flex-wrap: wrap;
+}
+
+.tit {
+  margin: 30rpx;
+  font-size: large;
+}
+
+.intro {
+  width: 400rpx;
+  height: 250rpx;
+  border-radius: 10rpx;
+  box-shadow: 10rpx 10rpx 10rpx rgba(0, 0, 0, 0.15);
+}
+
+.img {
+  margin-left: 30rpx;
+}
+
+.pric {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.pric1 {
+  margin-top: 30rpx;
+  margin-right: 50rpx;
+  color: coral;
+}
+
+.inform {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-bottom: 100rpx;
+}
+
+.go {
+  width: 100%;
+  margin: 30rpx;
+}
+
+.idcard {
+  margin: 30rpx;
+  flex-wrap: nowrap;
+}
+
+.phone {
+  margin: 30rpx;
+}
+
+.buybtn-container {
+  box-sizing: border-box;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 50rpx;
+  height: 100rpx;
+}
+
+.orde {
+  position: absolute;
+  top: -20rpx;
+  background-color: orange;
+}
+
+.na {
+  position: relative;
+  margin: 10rpx auto;
+  width: 90%;
+  height: 100rpx;
+  border-radius: 20rpx;
+  background-color: rgba(255, 255, 255, .7);
+  box-shadow: 10rpx 10rpx 10rpx rgba(0, 0, 0, 0.15);
+  transition: all .3s;
+}
+
+.na:hover {
+  transform: scale(1.05);
+  box-shadow: 10rpx 10rpx 10rpx rgba(0, 0, 0, 0.3);
+}
+
+.pre-text {
+  position: absolute;
+  left: 20rpx;
+  font-size: 35rpx;
+  align-items: center;
+  line-height: 100rpx;
+  font-weight: 400;
+  color: #50557A;
+}
+
+.in-name input {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  left: 118rpx;
+  height: 100rpx;
+}
+
+.in-idcard input {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  left: 150rpx;
+  height: 100rpx;
+}
+
+.in-phone input {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  left: 180rpx;
+  height: 100rpx;
+}

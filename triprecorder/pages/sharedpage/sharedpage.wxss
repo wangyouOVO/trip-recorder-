@@ -1,0 +1,134 @@
+/* pages/sharedpage/sharedpage.wxss */
+
+.mainbox{
+  width: 100%;
+  height: 700px;
+  display: flex ;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(145deg, #c6dae9, #dff2f8);
+  /* justify-content: center; */
+
+}
+.box1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.top{
+  margin-top: 20px;
+  height: 60px;
+  width: 100%;
+ display: flex;
+ flex-direction: row;
+}
+.left{
+  height:60px;
+  width: 70%;
+}
+.right{
+  height: 60px;
+  width: 25%;
+  padding: 15px;
+}
+
+.footer{
+  position: fixed;
+  margin-top: 470px;
+  height: 40px;
+  width: 85%;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+}
+.footer-item{
+  width: 60px;
+  font-size: small;
+  text-decoration-line: underline;
+  color: rgb(88, 83, 119);
+}
+.mapbox{
+  width: 89%;
+  height: 300px;
+  border: 1px solid rgb(107, 107, 202);
+  border-radius: 10px;
+  overflow:hidden;
+  box-shadow: 5rpx 5rpx 5rpx 5rpx rgb(153, 151, 151);
+
+}
+
+.btn{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 70px;
+  line-height: 40px;
+  font-size: 36rpx;
+  text-align: center;
+  background-color: #007AFF !important;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #FFFFFF;
+  border-radius: 10px
+
+}
+
+.formbox{
+  position: fixed;
+  width: 95%;
+  height: 425px;
+  margin: 15px;
+  border: 1px solid rgb(107, 107, 202);
+  border-radius: 5px;
+  overflow:hidden;
+ background-image: url("https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic.51yuansu.com%2Fbackgd%2Fcover%2F00%2F43%2F20%2F5bf2671934006.jpg%21%2Ffw%2F780%2Fquality%2F90%2Funsharp%2Ftrue%2Fcompress%2Ftrue&refer=http%3A%2F%2Fpic.51yuansu.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1654243552&t=0af62b2029c73354ea15b83d4aa639c7");
+  box-shadow: 5rpx 5rpx 5rpx 5rpx rgb(214, 205, 205);
+}
+
+.formbox1{
+  position: fixed;
+  width: 95%;
+  height: 470px;
+  margin: 15px;
+  border: 1px solid rgb(107, 107, 202);
+  border-radius: 5px;
+  overflow:hidden;
+ background-image: url("https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic.51yuansu.com%2Fbackgd%2Fcover%2F00%2F43%2F20%2F5bf2671934006.jpg%21%2Ffw%2F780%2Fquality%2F90%2Funsharp%2Ftrue%2Fcompress%2Ftrue&refer=http%3A%2F%2Fpic.51yuansu.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1654243552&t=0af62b2029c73354ea15b83d4aa639c7");
+  box-shadow: 5rpx 5rpx 5rpx 5rpx rgb(214, 205, 205);
+}
+
+/* .bg{
+  position: absolute;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  
+} */
+.section{
+  font-family: PingFangSC-Regular;
+  font-size: 60rpx;
+  position: relative;
+  margin: 10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  z-index: 1;
+  line-height: 110rpx;
+  margin-right: 10rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.section1{
+  position: relative;
+  margin: 10px;
+  margin-left: 28px;
+  z-index: 1;
+}
+.section2{
+  position: relative;
+  margin: 10px;
+  height: 270px;
+  width: 85%;
+  z-index: 1;
+}

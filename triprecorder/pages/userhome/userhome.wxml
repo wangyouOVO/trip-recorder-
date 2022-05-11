@@ -1,0 +1,34 @@
+<!--pages/userhome/userhome.wxml-->
+<view class="v1" style="height: 100vh">
+  <!-- <view class="v1"> -->
+  <view class="v2">
+    <view class="user-container">
+      <image class="avatar-image"></image>
+      <view class="name-container">
+        <view class="username">用户名：{{username}}</view>
+        <view class="nickname">昵称：{{nickname==null?'未设置':nickname}}</view>
+      </view>
+    </view>
+    <view class="nav-container">
+      <view class="order-form" bindtap="orderform">
+        <view></view>
+      </view>
+      <view></view>
+      <view></view>
+      <view></view>
+      <view></view>
+      <view class="user-edit" bindtap="useredit">
+        <view></view>
+      </view>
+      <view></view>
+      <view class="favor-loc" bindtap="favorloc">
+        <view></view>
+      </view>
+      <view></view>
+    </view>
+    <view class="nav-bottom">
+      <view class="log-out" bindtap="logout">退出登录</view>
+      <view class="update-pwd" bindtap="updatepwd">修改密码</view>
+    </view>
+  </view>
+</view>

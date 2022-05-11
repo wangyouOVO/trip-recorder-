@@ -1,0 +1,24 @@
+<view class="mainbox">
+  <view class="box1">
+    <view class="formbox">
+      <view class="section">
+        <view> {{title}}</view>
+      </view>
+      <view class="section1">
+        <view class="picker" style="font-size: small;">
+          出发的日子: {{date}}
+        </view>
+      </view>
+      <image hidden="{{imageShow}}" src="{{src}}" style="height: 250px; width: 90%; margin: 8px; margin-left: 15px;"></image>
+      <view class="section2">
+        <view style="font-size: medium;">{{text}}</view>
+      </view>
+
+    </view>
+
+
+  </view>
+
+
+
+</view>

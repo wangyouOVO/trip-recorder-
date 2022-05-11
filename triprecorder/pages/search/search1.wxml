@@ -1,0 +1,38 @@
+<view class="container">
+  <!-- 一般情况下的搜索框显示 -->
+  <view wx:if="{{!focus}}" class='search'>
+    <view class="search-container">
+      <input type='text' placeholder='想去哪儿？' placeholder-class="center" confirm-type='search' bindfocus="focusHandler"></input>
+    </view>
+    <view class="recommend-container">
+      <view class="rec-header">热门推荐</view>
+      <view class="rec-detail">
+        <view wx:for="{{recommend}}" wx:key="text" class="rec-items-container">
+          <view class="rec-items">
+            <navigator url="/pages/detail/detail?id1={{item.id}}&src1={{item.src}}&text1={{item.text}}&price1={{item.price}}&address1={{item.address}}&addressd1={{item.addressd}}&rate1={{item.rate}}&pre1={{item.pre}}&pred1={{item.pred}}&time1={{item.time}}&latitude1={{item.latitude}}&longtitude1={{item.longtitude}}">
+              <text>{{item.text}}</text>
+            </navigator>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 获得焦点时的搜索框，多一个取消按钮 -->
+<view wx:if="{{focus}}" class='searchfor'>
+  <view class="searchfor-container">
+    <input type='text' placeholder='搜索' confirm-type='search' value="{{inputValue}}" bindinput='query' />
+  </view>
+  <image src="../img/back.png" alt="" bindtap="cancelHandler" class="cancel-view"/>
+  <!-- 搜索结果显示框 -->
+  <scroll-view wx:if="{{focus}}" class="scrollview" scroll-y="true">
+    <view wx:for="{{playlist}}" wx:key="text">
+      <view class="scrollItem">
+        <navigator url="/pages/detail/detail?id1={{item.id}}&src1={{item.src}}&text1={{item.text}}&price1={{item.price}}&address1={{item.address}}&addressd1={{item.addressd}}&rate1={{item.rate}}&pre1={{item.pre}}&pred1={{item.pred}}&time1={{item.time}}&latitude1={{item.latitude}}&longtitude1={{item.longtitude}}" hover-class="navigator-hover">
+          <image src="/pages/img/hot.png"></image>
+          <text> {{item.text}}</text>
+        </navigator>
+      </view>
+    </view>
+  </scroll-view>
+</view>

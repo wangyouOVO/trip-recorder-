@@ -1,0 +1,54 @@
+<!--index.wxml-->
+<view class="mycontainer" style="background-color: #AFBFE3;">
+
+  <view style="background: url('https://img1.baidu.com/it/u=1511459804,320352938&fm=253&fmt=auto&app=120&f=JPEG?w=536&h=400'); background-size: cover;" class="section">
+    <view class="search">
+      <navigator url="/pages/search/search1" hover-class="navigator-hover" style="margin-top: 5rpx;">
+        <view class="search-button"></view>
+      </navigator>
+    </view>
+    <view class="loc">上海</view>
+    <view class="loc1">SHANGHAI</view>
+  </view>
+  <!-- 轮播图片 -->
+  <view class="img">
+    <swiper autoplay interval="3000" indicator-dots circular>
+      <swiper-item wx:for="{{playlist}}">
+        <image class='test' src="{{item.src}}"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="scroll-down">👇</view>
+  <!-- 景点列表 -->
+  <view class="list" style="font-size: large;font-weight: 700;">
+    景点列表
+  </view>
+  <view class="playlist">
+    <view class=" item ">
+      <navigator class="todayItem" wx:for="{{playlist}}" data-id="{{item.id}}" url="/pages/detail/detail?id1={{item.id}}&src1={{item.src}}&text1={{item.text}}&price1={{item.price}}&address1={{item.address}}&addressd1={{item.addressd}}&rate1={{item.rate}}&pre1={{item.pre}}&pred1={{item.pred}}&time1={{item.time}}&latitude1={{item.latitude}}&longtitude1={{item.longtitude}}" hover-class="navigator-hover">
+        <view class="b">
+          <view class="content">
+            <image class='image' src="{{item.src}}" />
+            <view class="a">
+              <view class="text">
+                <text class="text1">{{item.text}} </text>
+              </view>
+              <view class="rate">
+                <text>{{item.rate}}</text>
+              </view>
+              <view class="detail">
+                <view class="address">
+                  <text>📍: {{item.address}}</text>
+                </view>
+                <view class="price">
+                  <view class="price1">门市价：</view>
+                  <view class="price2">¥{{item.price}}</view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,49 @@
+<view class="detail" style="background-color: #F0F7EB;">
+  <view class='pic'>
+    <image class="introimg" src="{{src}}"></image>
+  </view>
+  <view class='de' style="background-color: white;">
+    <view class="name" style="font-size: x-large;font-weight: 700;">
+      <view>{{text}}</view>
+    </view>
+    <view class="rate">
+      <view class="rate-text">{{rate}}</view>
+    </view>
+    <view class="time">
+      <view class="al">
+        <view class="bl" style="font-weight:700; color:green"> 营业中 </view>
+        <view>{{time}}</view>
+      </view>
+      <view class='pre'>
+        <image class="preorder" src="/pages/img/appointment.png"></image>
+        <view class="ord">{{pred}}</view>
+      </view>
+    </view>
+    <view class="ad">
+      <navigator style="margin-left: 30rpx;" url="/pages/map/map?id1={{id}}&src1={{src}}&text1={{text}}&price1={{price}}&address1={{address}}&addressd1={{addressd}}&rate1={{rate}}&pre1={{pre}}&pred1={{pred}}&time1={{time}}&latitude1={{latitude}}&longtitude1={{longtitude}}"><image class="dot" src="/pages/img/position.png"></image></navigator>
+      <view class="addr">
+        {{addressd}}
+      </view>
+      <view class="ic">
+        <navigator url="/pages/map/map?id1={{id}}&src1={{src}}&text1={{text}}&price1={{price}}&address1={{address}}&addressd1={{addressd}}&rate1={{rate}}&pre1={{pre}}&pred1={{pred}}&time1={{time}}&latitude1={{latitude}}&longtitude1={{longtitude}}">
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:if="{{pre != 0}}" class="ticket">
+  <view class="type">
+    一日票
+  </view>
+  <view class="but">
+    <view class='price'>¥{{price}}</view>
+    <view class="button">
+      <navigator url="/pages/ordering/ordering?id1={{id}}&src1={{src}}&text1={{text}}&price1={{price}}&address1={{address}}" hover-class="navigator-hover">
+        <button class="orde" wx:if="{{pre}}">立即预订</button>
+      </navigator>
+    </view>
+  </view>
+</view>
+<view class="sharing">
+  <button class="share" open-type="share">分享</button>
+</view>

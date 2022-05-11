@@ -1,0 +1,190 @@
+/* pages/updatepwd/updatepwd.wxss */
+@import "../../lib/style/font.wxss";
+
+/* 最大的父元素 */
+.v1 {
+  display: block;
+  position: absolute;
+  width: 100%;
+  background-color: #50557A;
+}
+
+/* 白色区域 */
+.v1 .v2 {
+  position: relative;
+  margin-top: 150rpx;
+  left: 100rpx;
+  width: 545rpx;
+  height: 870rpx;
+  background-color: rgb(250, 248, 248);
+  border-radius: 50rpx;
+  box-shadow: 5rpx 5rpx 10rpx rgba(175, 191, 227, .5);
+}
+
+.update-text {
+  margin-top: 70rpx;
+  position: absolute;
+  margin-left: 50rpx;
+  width: 100%;
+  height: 100rpx;
+  font-size: 60rpx;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #341F47;
+  line-height: 100rpx;
+  letter-spacing: 2rpx;
+}
+
+.update-text::before {
+  font-family: "iconfont";
+  content: "\e606";
+  font-size: 100rpx;
+  font-weight: lighter;
+  color: #50557A;
+}
+
+.oldPwd {
+  margin-top: 200rpx;
+  margin-left: 25rpx;
+  position: absolute;
+  display: flex;
+  width: 480rpx;
+  height: 90rpx;
+  background-color: white;
+  border-radius: 12rpx;
+  transition: all .5s;
+}
+
+.oldPwd:hover {
+  box-shadow: 10rpx 10rpx 5rpx rgba(80, 85, 122, .5);
+}
+
+.v1 .v2 .oldPwd input {
+  width: 400rpx;
+  font-size: 30rpx;
+  margin-top: 25rpx;
+  margin-left: 30rpx;
+}
+
+.oldPwd .pwdicon::before {
+  font-family: "iconfont";
+  content: "\e8b2";
+  margin-right: 0;
+  font-size: 30rpx;
+  font-weight: bold;
+  color:  #AFBFE3;
+}
+
+.passWord {
+  margin-top: 350rpx;
+  margin-left: 25rpx;
+  position: absolute;
+  display: flex;
+  width: 480rpx;
+  height: 90rpx;
+  background-color: white;
+  border-radius: 12rpx;
+  transition: all .5s;
+}
+
+.passWord:hover {
+  box-shadow: 10rpx 10rpx 5rpx rgba(80, 85, 122, .5);
+}
+
+.v1 .v2 input {
+  width: 400rpx;
+  font-size: 30rpx;
+  margin-top: 25rpx;
+  margin-left: 30rpx;
+}
+
+.passWord .pwdicon::before {
+  font-family: "iconfont";
+  content: "\e8b2";
+  margin-right: 0;
+  font-size: 30rpx;
+  font-weight: bold;
+  color: rgba(67, 115, 217);
+}
+
+.confirpassWord {
+  margin-top: 500rpx;
+  margin-left: 25rpx;
+  position: absolute;
+  display: flex;
+  width: 480rpx;
+  height: 90rpx;
+  background-color: white;
+  border-radius: 12rpx;
+  transition: all .5s;
+}
+
+.confirpassWord:hover {
+  box-shadow: 10rpx 10rpx 5rpx rgba(80, 85, 122, .5);
+}
+
+.confirpassWord .pwdicon::before {
+  font-family: "iconfont";
+  content: "\e8b2";
+  margin-right: 0;
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #50557A;
+}
+
+.update-button {
+  width: 480rpx;
+  height: 80rpx;
+  position: absolute;
+  margin-top: 665rpx;
+  margin-left: 25rpx;
+}
+
+@keyframes button {
+  0% {
+    background-color: rgba(67, 115, 217, .81);
+  }
+
+  50% {
+    background-color: rgba(67, 115, 217, 1);
+    transform: scale(1.01);
+  }
+
+  100% {
+    background-color: rgba(67, 115, 217, .81);
+  }
+}
+
+.btn-update {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0rpx;
+  line-height: 70rpx;
+  font-size: 30rpx;
+  width: 100%;
+  height: 100%;
+  border-radius: 12rpx;
+  background-color: rgba(67, 115, 217, .8);
+  color: white;
+}
+
+.btn-update:hover {
+  animation-name: button;
+  animation-duration: .5s;
+  animation-fill-mode: backwards;
+}
+
+.back {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.back view {
+  flex: 1;
+  margin-top: 20rpx;
+  font-size: 25rpx;
+  text-decoration: underline;
+  color: rgba(80, 85, 122, .5)
+}

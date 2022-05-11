@@ -1,0 +1,120 @@
+/* pages/address/address.wxss */
+.mapbox{
+  width: 94%;
+  height: 300px;
+  border: 1px solid rgb(107, 107, 202);
+  border-radius: 10px;
+  overflow:hidden;
+  box-shadow:  5px 5px 7px #6095c6,
+  -5px -5px 7px rgb(194,207,238);
+
+}
+.map{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.container1{
+  width: 100%;
+  height: auto;
+  background-color: #c2cfee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header{
+  width: 60%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  font-size: medium;
+  font-weight: 900;
+  color: rgb(29, 20, 109);
+  margin: 10px;
+
+}
+
+.memu{
+  margin: 20px;
+  width: 94%;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  /* justify-content:space-around; */
+}
+
+.btn{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 70px;
+  line-height: 40px;
+  font-size: 36rpx;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #FFFFFF;
+  border-radius: 10px;
+background: linear-gradient(145deg, #6fb0df, #6fcbe7);
+box-shadow:  7px 7px 10px #6095c6,
+             -7px -7px 10px rgb(194,207,238);
+}
+.btn1{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 70px;
+  line-height: 40px;
+  font-size: 36rpx;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #FFFFFF;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #97aaf7, #7f8fd0);
+
+}
+.board{
+  position: absolute;
+  height: 900px;
+  width: 100%;
+  background-color: rgba(21, 44, 54, 0.55);
+  
+}
+
+.formbox{
+  position: fixed;
+  width: 80%;
+  height: 400px;
+  margin: 15px;
+  border: 1px solid rgb(107, 107, 202);
+  border-radius: 5px;
+  overflow:hidden;
+ background-image: url("https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic.51yuansu.com%2Fbackgd%2Fcover%2F00%2F43%2F20%2F5bf2671934006.jpg%21%2Ffw%2F780%2Fquality%2F90%2Funsharp%2Ftrue%2Fcompress%2Ftrue&refer=http%3A%2F%2Fpic.51yuansu.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1654243552&t=0af62b2029c73354ea15b83d4aa639c7");
+ box-shadow:  7px 7px 10px #6897c4,
+ -7px -7px 10px rgb(131, 147, 184);
+}
+
+/* .bg{
+  position: absolute;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  
+} */
+.section1{
+  position: relative;
+  margin: 10px;
+  margin-left: 28px;
+  z-index: 1;
+}
+.section2{
+  position: relative;
+  margin: 10px;
+  height: 200px;
+  width: 85%;
+  z-index: 1;
+}

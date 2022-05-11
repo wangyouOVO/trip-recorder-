@@ -1,0 +1,19 @@
+<!--pages/edituserinfo/edituserinfo.wxml-->
+<view class="v1" style="height: {{clientHeight?clientHeight+'px':'auto'}};">
+  <!-- <view class="v1"> -->
+  <view class="v2">
+    <view class="user-container">
+      <image class="avatar-image"></image>
+      <view class="name-container">
+        <input class="username" placeholder="{{ username }}" disabled="true"></input>
+        <input class="nickname" placeholder="{{ nickname==null?'点击设置昵称':nickname}}" bindinput="nickname"></input>
+      </view>
+    </view>
+    <view class="user-detail">
+      <input class="location" placeholder="{{location==null?'点击设置地区':location}}" bindinput="location"></input>
+      <input class="email" placeholder="{{email==null?'点击设置邮箱':email}}" bindinput="email"></input>
+      <input class="describe" placeholder="{{describe==null?'简介：介绍一下你自己吧~':describe}}" bindinput="describe"></input>
+      <button class="btn-save" size="mini" bindtap="useredit">保存修改</button>
+    </view>
+  </view>
+</view>

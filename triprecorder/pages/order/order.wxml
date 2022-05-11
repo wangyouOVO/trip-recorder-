@@ -1,0 +1,21 @@
+<view class="myorder" style="display: flex; flex-wrap: wrap; justify-content: flex-start;">
+    <view style="display: flex; flex-direction: row;">
+      <checkbox checked="{{selectall}}" style="margin-left: 20rpx;" class="checkbox" bindtap="selectall"/> 
+      <view class="quanxuan" style="margin-right:50rpx;width: 200rpx;display: flex;">全选</view>
+      <view style="width: 100%; display: flex; justify-content: center;margin-left: 0rpx;">我的订单</view>
+      <view bindtap="clear" style="margin-left: 90rpx; width: 200rpx;">删除</view>
+      </view>
+    <checkbox-group bindchange="checkboxChange">
+    <view wx:for="{{orderlist}}">
+    <view wx:if="{{item.ordered != 0&&item.ordered != null}}" style="display: flex; flex-direction: row; margin-top: 50rpx;margin-left: 20rpx;">
+       <checkbox style="margin-top: 90rpx;margin-right: 10rpx;" value="{{item.id}}" checked="{{item.checked}}" class="checkbox"/>       
+        <image src="{{item.src}}" style="width: 300rpx; height: 200rpx;"></image>
+        <view style="margin-left: 30rpx;margin-top: 20rpx;">
+            <view>{{item.text}}</view>
+            <view style="margin-top: 40rpx;"> 数量：{{item.ordered}}</view>
+            <view style="margin-top: 40rpx;">¥{{item.price*item.ordered}}</view>
+        </view>
+    </view>
+    </view>
+  </checkbox-group>
+</view>

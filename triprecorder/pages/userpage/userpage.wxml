@@ -1,0 +1,23 @@
+<!--pages/userpage/userpage.wxml-->
+<view class="v1" style="height: {{clientHeight?clientHeight+'px':'auto'}};">
+  <!-- <view class="v1"> -->
+  <view class="v2">
+    <view class="user-container">
+      <image class="avatar-image"></image>
+      <view class="name-container">
+        <!-- <view class="datestyle">显示时间：2022：0504</view> -->
+        <view class="username">用户名：{{username}}</view>
+        <view class="nickname">昵称：{{nickname==null?'未设置':nickname}}</view>
+      </view>
+    </view>
+    <view class="user-detail">
+      <view class="location">地区：{{location==null?'未设置':location}}</view>
+      <view class="email">邮箱：{{email==null?'未设置':email}}</view>
+      <view class="describe">简介：{{describe==null?'主人很懒，还没有填写自我介绍':describe}}</view>
+      <view class="edit">
+      <navigator url="/pages/edituserinfo/edituserinfo">点我完善你的个人信息吧~</navigator>
+      <navigator open-type="switchTab" url='/pages/userhome/userhome'>返回首页</navigator>
+    </view>
+    </view>
+  </view>
+</view>

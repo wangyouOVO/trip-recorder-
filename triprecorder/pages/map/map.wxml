@@ -1,0 +1,7 @@
+<!--pages/map/map.wxml-->
+
+<view class="map_container">
+  <map class='map' longitude='{{longtitude}}' latitude='{{latitude}}' scale='{{scale}}' markers='{{markers}}' controls="{{controls}}" bindcontroltap="bindcontroltap" polyline='{{polyline}}' circles="{{circles}}" bindmarkertap='bindmarkertap' bindcontroltap='bindcontroltap'
+    show-location></map>
+</view>
+

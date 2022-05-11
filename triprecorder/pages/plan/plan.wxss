@@ -1,0 +1,6 @@
+.myplan{
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 20rpx rgba(0, 0, 0, 0.15);
+    height: 50rpx;
+}
